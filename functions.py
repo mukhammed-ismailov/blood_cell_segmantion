@@ -1,12 +1,16 @@
 from config import *
 
-def plot_images(img):
+def plot_images(img, titles):
 
     fig, ax = plt.subplots(1, len(img))
     for i in range(len(img)):
+
+        ax[i].set_title(titles[i])
+
         ax[i].imshow(img[i])
 
     plt.show()
+
     cv.waitKey(0)
 
 def find_countors_area(img):

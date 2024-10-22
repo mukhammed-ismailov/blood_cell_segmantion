@@ -26,11 +26,13 @@ for i in images:
 
     analize_img = Analayze(color_matrix, cluster_img)
     cores = analize_img.get_cores()
-    cytopasms = analize_img.get_cyto()
+    cytoplasm = analize_img.get_cyto()
 
-    tot = cores*cytopasms
+    img_dizi = [img, object_img,  cores, cytoplasm]
 
-    img_dizi = [img, tot]
-    plot_images(img_dizi)
 
-    #break
+    titles = ['Original image', 'Cell image', 'Core', 'Cytoplasm']
+
+    plot_images(img_dizi, titles)
+
+
