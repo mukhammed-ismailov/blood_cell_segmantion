@@ -2,7 +2,7 @@ from config import *
 
 def plot_images(img, titles):
 
-    fig, ax = plt.subplots(1, len(img), figsize=(8,6))
+    fig, ax = plt.subplots(1, len(img), figsize=(12,6))
 
     for i in range(len(img)):
 
