@@ -2,7 +2,8 @@ from config import *
 
 def plot_images(img, titles):
 
-    fig, ax = plt.subplots(1, len(img))
+    fig, ax = plt.subplots(1, len(img), figsize=(8,6))
+
     for i in range(len(img)):
 
         ax[i].set_title(titles[i])
