@@ -1,4 +1,4 @@
-# The algorithm for detecting leukocytes.
+# Алгоритм сегментации лейкоцитов 
 
 This project describes an algorithm for segmentation of white blood cells in images taken at a magnification of 100x. Also, the release of cytoplasm and cell nuclei. With obtaining the area of the cytoplasm and the nucleus.  
 
